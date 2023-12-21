@@ -5,3 +5,7 @@
 * {
   background-color: black;
 }
+
+.code-gradient {
+  background: linear-gradient(to right, #00241f, #000f0d, #000000);
+}
