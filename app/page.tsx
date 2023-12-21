@@ -1,112 +1,56 @@
 import Image from 'next/image'
+import { BsBoxArrowUpRight } from "react-icons/bs";
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <main>
+      <nav className='bg-[rgba(0,0,0,0.5)] backdrop-blur-[5px] items-center flex h-[50px] w-full border-b-[#181818] border-b-[1px] fixed top-0 left-0 right-0 justify-between'>
+        <p className='text-white md:pl-[100px] pl-[35px] text-[15px] bg-transparent'>Nextjs Outlined</p>
+        <Link href='https://nextjs.org/' passHref>
+          <div className='text-white hover:text-[#9d9d9d] transition-[1s] cursor-pointer mr-[35px] md:mr-[100px]'>
+            <BsBoxArrowUpRight style={{ fontSize: '1.2em' }} />
+          </div>
+        </Link>
+      </nav>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <p className='text-white md:pl-[100px] pl-[35px] text-[30px] pr-[35px] font-bold pt-[65px]'>
+        The React Framework for the Web - Nextjs
+      </p>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+      <p className='text-white md:pl-[100px] pl-[35px] pr-[35px] text-[15px] pt-[20px] md:pr-[100px]'>
+        Welcome to the world of Next.js, where React development gets a supercharge!<br />This crash course will equip you with the essential knowledge to navigate this exciting framework, even if you're starting fresh.
+      </p>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+      <p className='text-white md:pl-[100px] pl-[35px] pr-[35px] text-[20px] pt-[25px] md:pr-[100px] font-semibold'>
+        What is Next.js?
+      </p>
+      <p className='text-white md:pl-[100px] pl-[35px] pr-[35px] text-[15px] pt-[5px] md:pr-[100px]'>
+        Think of Next.js as a power-up for your React projects.<br />It builds upon the core React library, adding functionalities that make your life easier and your websites faster, sleeker, and more SEO-friendly.
+      </p>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+      <p className='text-white md:pl-[100px] pl-[35px] pr-[35px] text-[20px] pt-[25px] md:pr-[100px] font-semibold'>
+        Main Features
+      </p>
+      <p className='text-white md:pl-[100px] pl-[35px] pr-[35px] text-[15px] pt-[5px] md:pr-[100px]'>
+        <strong>Pages:</strong> These are the building blocks of your Next.js app, each representing a distinct section or route. Think of them as your website's individual rooms. <br />
+        <strong>Server-Side Rendering (SSR):</strong> This technique pre-renders pages on the server, delivering them instantly to users. It's great for SEO and initial page load times. <br />
+        <strong>Static Site Generation (SSG):</strong> This approach pre-renders pages at build time, making them static HTML files. Superfast loading is the name of the game here! <br />
+        <strong>Data Fetching:</strong> Need dynamic data like blog posts or product listings? Next.js makes fetching data from APIs and other sources a breeze.
+      </p>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <p className='text-white md:pl-[100px] pl-[35px] pr-[35px] text-[20px] pt-[25px] md:pr-[100px] font-semibold'>
+        Getting Started
+      </p>
+      <p className='text-white md:pl-[100px] pl-[35px] pr-[35px] text-[15px] pt-[5px] md:pr-[100px]'>
+        Creating a Next.js app is surprisingly easy. You can use the Next.js Installation Command-line tool
+      </p>
+      <div className="mb-[100px]">
+        <pre className="text-white p-4 md:pl-[100px] pl-[35px]">
+          <code className='bg-[#1e1e1e] pl-[20px] pr-[20px] pt-[15px] pb-[15px] rounded-[5px]]'>
+            npx create-next-app@latest
+          </code>
+        </pre>
       </div>
     </main>
   )
